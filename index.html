@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>航空全套廣播詞總成手冊 (Master PA Manual)</title>
+    <style>
+        :root {
+            --primary-blue: #0284c7;
+            --primary-amber: #d97706;
+            --bg-color: #0f172a; /* 夜航護眼深色模式 */
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0369a1, var(--primary-blue));
+            color: white;
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 1.6rem;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* 快速導航 */
+        .nav-quick {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            position: sticky;
+            top: 10px;
+            z-index: 10;
+            background: var(--bg-color);
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-btn {
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .nav-btn:hover {
+            background-color: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: #38bdf8;
+            margin: 32px 0 12px 0;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 16px;
+            border-left: 5px solid var(--primary-blue);
+            border-top: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card.emergency { border-left-color: var(--primary-amber); }
+
+        h3 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .script-box {
+            background-color: #0f172a;
+            border: 1px solid var(--border-color);
+            padding: 16px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-family: monospace, sans-serif;
+            font-size: 0.95rem;
+            color: #e2e8f0;
+            white-space: pre-line;
+            line-height: 1.7;
+        }
+
+        .tips {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>✈️ 航空全套廣播詞總成手冊 (Routine & Emergency PA Master)</h1>
+        <p>完整收錄：日常標準航班廣播 (Routine PA) ＋ 次緊急應變廣播 (Emergency PA)</p>
+    </header>
+
+    <!-- 快速導航 -->
+    <div class="nav-quick">
+        <a href="#routine-boarding" class="nav-btn">🛫 正常：登機與起飛前</a>
+        <a href="#routine-flight" class="nav-btn">☁️ 正常：巡航與降落</a>
+        <a href="#emergency-capt" class="nav-btn">👨‍✈️ 緊急：機長轉場／單發</a>
+        <a href="#emergency-crew" class="nav-btn">🚨 緊急：亂流／醫療</a>
+    </div>
+
+    <!-- ==================== 第一部分：正常廣播 (Routine PA) ==================== -->
+    <div id="routine-boarding" class="section-title">🛫 第一部分：日常標準航班廣播 (Routine PA)</div>
+    
+    <div class="card">
+        <h3>1. 登機歡迎廣播 (Boarding Welcome) - 客艙組員</h3>
+        <div class="script-box">「各位貴賓，早安／午安／晚安，歡迎登機。請依您的登機證座位號碼尋找座位，並將大型行李放置於上方行李櫃，小型隨身物品請收納於前排座椅下方。謝謝您的合作。」
+(Ladies and gentlemen, welcome aboard. Please find your seat according to your boarding pass...)</div>
+    </div>
+
+    <div class="card">
+        <h3>2. 起飛前安全示範／檢查廣播 (Pre-Takeoff Safety PA) - 客艙經理</h3>
+        <div class="script-box">「各位旅客，我們即將起飛。請確認您的安全帶已確實繫緊，座椅背及餐桌椅已調至豎直位置，所有電子設備已設定為飛航模式或關閉。本航班為全面禁煙航班，請勿在客艙或洗手間內吸煙。謝謝。」</div>
+    </div>
+
+    <div id="routine-flight" class="card">
+        <h3>3. 巡航中歡迎與飛行資訊 (In-Flight Cruise PA) - 機長</h3>
+        <div class="script-box">「各位旅客，我是本次航班的機長。我們目前已經到達 [填入高度] 呎的巡航高度，飛行速度約為每小時 [填入速度] 公里。預計我們將於當地時間 [填入抵達時間] 降落於 [填入目的地] 機場。目的地目前的天氣為 [填入天氣] 度。祝各位旅途愉快，謝謝。」</div>
+    </div>
+
+    <div class="card">
+        <h3>4. 降落前準備廣播 (Pre-Landing PA) - 客艙經理</h3>
+        <div class="script-box">「各位旅客，我們即將降落於 [填入目的地] 機場。請再次檢查您的安全帶是否繫緊，座椅背與遮陽板已調回原位。請將所有隨身行李收好。洗手間即將關閉。謝謝。」</div>
+    </div>
+
+
+    <!-- ==================== 第二部分：次緊急廣播 (Emergency PA) ==================== -->
+    <div id="emergency-capt" class="section-title">🚨 第二部分：次緊急與非正常狀況廣播 (Emergency PA)</div>
+    
+    <div class="card emergency">
+        <h3>5. 機長廣播：預防性轉場／機械異常 (Captain's PA - Precautionary Diversion)</h3>
+        <div class="script-box">「各位貴賓，我是本次航班的機長。我們在飛行途中注意到一項系統的非預期顯示。為了貫徹我們最高標準的飛航安全，本著預防原則，我已決定將本航班轉降至鄰近的 [填入機場名稱] 機場進行詳細檢查。
+目前飛機完全在控制之中，各項系統運作正常。預計將於大約 [填入時間] 順利降落。落地後地勤與維修團隊將協助後續行程。造成不便深感抱歉。」</div>
+    </div>
+
+    <div class="card emergency">
+        <h3>6. 機長廣播：單發失效／預防降落 (Captain's PA - Single Engine / Return)</h3>
+        <div class="script-box">「各位旅客，我是機長。剛才我們的其中一具引擎出現了次要參數異常，依照標準程序我已將該引擎關閉。飛機設計有雙引擎備援能力，單發依然能安全飛行。為求萬無一失我們將就近返回機場檢查。請保持冷靜，聽從組員引導。」</div>
+    </div>
+
+    <div id="emergency-crew" class="card emergency">
+        <h3>7. 組員廣播：非預期劇烈亂流 (Cabin Crew PA - Severe Turbulence)</h3>
+        <div class="script-box">「各位旅客請注意，本航機目前遭遇亂流。請全體旅客立刻返回座位，繫緊安全帶，並將手提行李妥善固定。洗手間暫停使用，所有服務暫時停止。謝謝配合。」</div>
+    </div>
+
+    <div class="card emergency">
+        <h3>8. 組員廣播：尋求醫療協助 (Cabin Crew PA - Medical Assistance)</h3>
+        <div class="script-box">「各位旅客請注意，機上有旅客身體不適需要醫療協助。如果機上有任何醫師、護理師或醫療專業人員，請按服務鈴告知客艙組員，我們非常需要您的協助。謝謝。」</div>
+    </div>
+
+</div>
+
+</body>
+</html>
